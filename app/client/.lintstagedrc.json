@@ -1,8 +1,8 @@
 {
-	"src/**/*.{js,ts,tsx}": ["npx eslint --fix"],
-	"src/**/*.{js,ts,tsx,css,md,json}": ["npx prettier --write"],
-	"cypress/**/*.{js,ts}": ["cd ./cypress && npx eslint -c .eslintrc.json --fix"],
-	"cypress/**/*.{js,ts,json}": ["npx prettier --write"],
-	"packages/**/*.{js,ts,tsx}": ["npx eslint --fix"],
-	"packages/**/*.{js,ts,tsx,css,mdx,json}": ["npx prettier --write"]
+	"src/**/*.{js,ts,tsx}": ["eslint --fix", "prettier --write"],
+	"src/**/*.{css,md,json}": ["prettier --write"],
+	"cypress/**/*.{js,ts}": ["cd ./cypress && eslint -c .eslintrc.json --fix", "prettier --write"],
+	"cypress/**/*.{json}": ["prettier --write"],
+	"packages/**/*.{js,ts,tsx}": ["eslint --fix", "prettier --write"],
+	"packages/**/*.{css,mdx,json}": ["prettier --write"]
 }
